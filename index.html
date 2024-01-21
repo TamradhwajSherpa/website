@@ -1,313 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Photoweb</title>
+	<title>Best AI Tools</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="icon" type="image" href="C:\Users\sherp\Pictures\Screenshots\Screenshot (369).png">
 <style>
-	*{padding: 0; margin:0; box-sizing: border-box;}
 
-body{
-	scroll-behavior: smooth;
-		overflow-x: hidden;
-}
-header{
-	width: 100vw;
-	height:90vh;
-	background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('img/banner1.jpg');
-	background-size: cover;
-	background-position:;
-	position: relative;
-	background-attachment: fixed;
-}
-nav{
-	width: 100%;
-	height:80px;
-	background: white;
-	color: black;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0px 80px;
-	position:fixed;
-	top:0;
-	background:white;
-	z-index: 1;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-.logo{
-	font-family: sans-serif;
-	font-size:2.5em;
-}
-.logo span{
-	color: #e74c3c;
-}
-.menu a{
-	text-decoration: none;
-	color: black;
-	font-size:20px;
-	
-	padding: 10px 20px;
-	font-family: sans-serif;
-
-}
-.menu a:first-child{
-	color:#e74c3c;
-}
-.menu a:hover{
-	color: #e74c3c;
-	transition: 0.4s;
-}
-.icon i{
-	font-size:20px;
-}
-.icon i:hover{
-	color: #e74c3c;
-}
-.icon a{
-	padding:10px 20px;
-	background:#e74c3c;
-	color:white;
-	text-decoration: none;
-	margin-left:30px;
-	border-radius: 5px;  
-}
-.icon a:hover{
-	background: transparent;
-	border:1px solid #e74c3c;
-	color: black;
-	transition: 0.4s ease;
-}
-.h-text{
-	max-width: 700px;
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: white;
-	text-align: center;
-}
-#camera{
-	font-size: 40px;
-	margin-bottom: 10px;
-}
-.h-text h1{
-	font-family: sans-serif;
-	font-size: 3em;
-	line-height:1.5em;
-}
-.h-text input{
-	width: 60%;
-	padding: 20px;
-	border-radius: 8px;
-	font-size: 20px;
-	border:none;
-	outline: none;
-}
-.h-text button{
-	width: 30%;
-	padding:20px;
-	background: #e74c3c;
-	font-size: 20px;
-	border:none;
-	outline: none;
-	color: white;
-	border-radius: 8px; 
-	margin-top: 30px;
-}
-
-
-.filter-gallery{
-	padding:100px;
-
-}
-
-
-.portfolio-menu{
-		text-align: center;
-		margin-bottom: 20px;
-	}
-	.portfolio-menu ul li{
-		list-style: none;
-		display: inline-block;
-		margin:20px 0px;
-		font-size: 20px;
-		font-weight: bold;
-		font-family: sans-serif;
-		padding: 10px 20px;
-		cursor: pointer;
-		transition: 0.5s ease;
-		text-align: center;
-		
-
-	}
-	.portfolio-menu ul li:hover{
-		background:  #e74c3c;
-		color: white;
-		border-radius: 8px;
-	}
-	li.active{
-		background:#e74c3c;
-		color: white;
-		border-radius: 8px;
-	}
-	.portfolio-item{
-		width: 100%;
-	}
-	.portfolio-item .item{
-		width:360px ;
-		height:360px;
-		float: left;
-		margin-bottom:20px;
-		margin-right: 20px;
-	}
-.portfolio-item .item img{
-	width: 100%;
-	height: 100%;
-	border-radius: 8px;
-}
-.members{
-
-	font-family: sans-serif;
-	width: 100%;
-
-	padding:20px 100px;
-}
-.member-info{
-	text-align: center;
-
-}
-.member-info h1 {
-	font-size: 2.5em;
-
-}
-.member-info h1 span{
-	color:#e74c3c;
-}
-.member-card{
-	text-align: center;
-	padding-top: 50px;
-	width: 50%;
-	margin:auto;
-	}
-
-.member-card p{
-	margin:20px 0px;
-	line-height: 2em;
-}
-.member-card h2{
-	margin:20px 0px;
-}
-
-.m-images{
-	width: 100%;
-	display: flex;
-	margin: 20px 0px;
-	overflow: hidden;
-}
-.m-images img{
-	width: 200px;
-	height: 200px;
-	cursor: pointer;
-	
-	transition: 0.4s ease-in-out;
-}
-.m-images img:hover{
-	transform: scale(1.5);
-}
-
-
-footer{
-	background: #262626;
-	color: white;
-	width: 100%;
-
-	padding: 50px 100px;
-}
-
-.newsletter{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding:30px;
-	border:1px solid rgba(255,255,255,0.2);
-}
-.newsletter>div{
-	flex-basis: 50%;
-}
-.n-text{
-	
-	text-align: right;
-}
-.newsletter h2{
-	font-size: 2em;
-	font-family: sans-serif;
-}
-.newsletter p{
-	font-size: 20px;
-	margin-top: 10px;
-}
-.newsletter label{
-	position: relative;
-
-}
-.newsletter input{
-	padding: 20px;
-	width: 70%;
-	border-radius: 8px;
-	border:none;
-	outline: none;
-	font-family: sans-serif;
-}
-.newsletter button{
-	position: absolute;
-	right: 0;
-	padding: 20px;
-	width: 30%;
-	background: #e74c3c;
-	color: white;
-	border:none;
-	outline: none;
-	border-radius: 0 8px 8px 0;
-}
-.f-contact{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	margin-top:3em;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-.f-contact>div{
-	flex-basis:20%;
-
-
-}
-.f-contact p{
-	line-height:2em;
-	font-size: 20px;
-	color: grey;	
-	cursor: pointer;
-}
-.f-contact p:hover{
-	color: white;
-}
-.f-contact i{
-	background: white;
-	color: black;
-	padding:10px;
-	font-size:16px;
-	margin: 20px 5px;
-	border-radius: 50%;
-	transition: .4s ease;
-}
-.f-contact i:hover{
-	background: transparent;
-	border:1px solid white;
-	color: white;
-}
 
 </style>
 </head>
@@ -315,108 +16,377 @@ footer{
 <header>
 	<nav>
 		<div class="logo">
-			Photo<span>pi</span>X
+			Q<span>U</span>L
 		</div>
 		<div class="menu">
 			<a href="#">Home</a>
 			<a href="#">About</a>
-			<a href="#">Gallery</a>
+			<a href="#">Explore</a>
 			<a href="#">Contact</a>
 		</div>
 		<div class="icon">
 			<i class="fa fa-search"></i>
-			<a href="#">Login</a>
+			<a class="open-button" onclick="toggleForm()">Signup</a>
 
 		</div>
 	</nav>
 
+	<div class="form-popup" id="myForm">
+		<form action="/action_page.php" class="form-container">
+		  <h1>Login</h1>
+	  
+		  <label for="email"><b>Email</b></label>
+		  <input type="text" placeholder="Enter Email" name="email" required>
+	  
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" placeholder="Enter Password" name="psw" required>
+	  
+		  <button type="submit" class="btn">Login</button>
+		</form>
+	  
+	  </div>
+
 
 	<section class="h-text">
-		<i class="fa fa-camera" id="camera"></i>
-		<h1 data-aos="zoom-in-down" data-aos-delay="100">Capturing the moments that captivate your heart.</h1>
-		<input type="text" name="" placeholder="Search here...">
-		<button><i class="fa fa-search"></i></button>
+		<i class="fa fa-camera" id="camera" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="250"></i>
+		<h2 data-aos="zoom-in-down" data-aos-delay="100">Machine Learning Projects</h2>
+		<h4 data-aos="zoom-in" data-aos-offset="100" data-aos-delay="250">"Machine learning is the last invention that humanity will ever need"</h4>
+		<input type="text" name="" placeholder="Search here..." data-aos="zoom-in" data-aos-offset="100" data-aos-delay="250">
+		<button data-aos="zoom-in" data-aos-offset="100" data-aos-delay="250"><i class="fa fa-search" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="250"></i></button>
 
 		
 	</section>
 </header>
 
+<div class="headingkkk" >
+    <h1>AI Tools For You Explore Them</h1>
+</div>
+<div class="detail555">
+    <a class="thought555">
+		<h1>152 Best AI Tools Of 2023</h1>
+		<span href="">WRITTEN BY
+			Ema Lukan
+			PUBLISHED ON
+			October 31, 2023
+		</span>
+	</a>
+    <img class="imageskoo" src="C://Users//sherp//Pictures///653baa3db0a4906fdf0841de_pg7knp0fn4.png" alt="">
+</div>
+<div class="li-container">
+	<p class="line-container"></p>
+</div>
 <section class="filter-gallery">
-	<div class="portfolio-menu">
+	<div class="portfolio-menu" data-aos="zoom-in" data-aos-offset="10" data-aos-delay="250">
 			<ul>
 				<li class="active" data-filter="*"> All</li>
-				<li data-filter=".web"> Nature</li>
-				<li data-filter=".seo">Faishon</li>
-				<li data-filter=".graphics">Wedding</li>
+				<li data-filter=".chat"> Chat Bot</li>
+				<li data-filter=".videoediting">Video Editing</li>
+				<li data-filter=".photoediting">Photo Editing</li>
 			</ul>
-		</div>
-		<div class="portfolio-item">
-			<div class="item web"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
-				<img src="img/p1.jpg" width="100" height="100">
-			</div>
+	</div>
 
-			<div class="item seo"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
-				<img src="img/p2.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/p3.jpg" width="100" height="100">
-			</div>
-			<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
-				<img src="img/p4.jpg" width="100" height="100">
-			</div>
+				<div class="card-container">
+					<div class="card chat" >
+					  <img src="https://topai.tools/assets/img/tools/video-summarizer-ai.webp" alt="Card Image">
+					  <div class="card-content">
+						<p>Bottom Text 1</p>
+						<a href="https://link1.com" target="_blank">Go Somewhere 1</a>
+					  </div>
+					</div>
+				
+					<div class="card videoediting">
+					  <img src="https://topai.tools/assets/img/tools/hyperficient.webp" alt="Card Image">
+					  <div class="card-content">
+						<p>Bottom Text 2</p>
+						<a href="https://link2.com" target="_blank">Go Somewhere 2</a>
+					  </div>
+					</div>
+				
+					<div class="card">
+					  <img src="https://topai.tools/assets/img/tools/speechimo.webp" alt="Card Image">
+					  <div class="card-content">
+						<p>Bottom Text 3</p>
+						<a href="https://link3.com" target="_blank">Go Somewhere 3</a>
+					  </div>
+					</div>
+				
+					<div class="card chat">
+					  <img src="https://topai.tools/assets/img/tools/atua.webp" alt="Card Image">
+					  <div class="card-content">
+						<p>Bottom Text 4</p>
+						<a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+					  </div>
+					</div>
+					<div class="card videoediting">
+					  <img src="https://topai.tools/assets/img/tools/petal.webp" alt="Card Image">
+					  <div class="card-content">
+						<p>Bottom Text 4</p>
+						<a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+					  </div>
+					</div>
+					<div class="card">
+					  <img src="C://Users//sherp//Pictures///f6.jpeg" alt="Card Image">
+					  <div class="card-content">
+						<p>Bottom Text 4</p>
+						<a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+					  </div>
+					</div>
 
-			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
-				<img src="img/p5.jpg" width="100" height="100">
-			</div>
-			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/p6.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
-				<img src="img/p7.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="200">
-				<img src="img/p8.jpg" width="100" height="100">
-			</div>
-			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
-				<img src="img/p9.jpg" width="100" height="100">
-			</div>
-		</div>
-	
+					<div class="card chat">
+						<img src="https://topai.tools/assets/img/tools/getdavinci-ai.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 1</p>
+						  <a href="https://link1.com" target="_blank">Go Somewhere 1</a>
+						</div>
+					  </div>
+				  
+					  <div class="card videoediting">
+						<img src="C://Users//sherp//Pictures///f2.png" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 2</p>
+						  <a href="https://link2.com" target="_blank">Go Somewhere 2</a>
+						</div>
+					  </div>
+				  
+					  <div class="card">
+						<img src="https://topai.tools/assets/img/tools/ifoto.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 3</p>
+						  <a href="https://link3.com" target="_blank">Go Somewhere 3</a>
+						</div>
+					  </div>
+				  
+					  <div class="card chat">
+						<img src="C://Users//sherp//Pictures//f4.jpeg" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 4</p>
+						  <a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+						</div>
+					  </div>
+					  <div class="card chat">
+						<img src="https://topai.tools/assets/img/tools/photo-ai-studio.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 1</p>
+						  <a href="https://link1.com" target="_blank">Go Somewhere 1</a>
+						</div>
+					  </div>
+				  
+					  <div class="card videoediting">
+						<img src="https://topai.tools/assets/img/tools/docsbot-ai.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 2</p>
+						  <a href="https://link2.com" target="_blank">Go Somewhere 2</a>
+						</div>
+					  </div>
+				  
+					  <div class="card">
+						<img src="https://topai.tools/assets/img/tools/adobe-firefly.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 3</p>
+						  <a href="https://link3.com" target="_blank">Go Somewhere 3</a>
+						</div>
+					  </div>
+				  
+					  <div class="card chat">
+						<img src="https://topai.tools/assets/img/tools/dreamgen-role-play-story-writing.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 4</p>
+						  <a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+						</div>
+					  </div>
+
+					  <div class="card chat" >
+						<img src="https://topai.tools/assets/img/tools/typegrow.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 1</p>
+						  <a href="https://link1.com" target="_blank">Go Somewhere 1</a>
+						</div>
+					  </div>
+				  
+					  <div class="card videoediting" >
+						<img src="https://topai.tools/assets/img/tools/corporate-headshots-ai.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 2</p>
+						  <a href="https://link2.com" target="_blank">Go Somewhere 2</a>
+						</div>
+					  </div>
+				  
+					  <div class="card">
+						<img src="https://topai.tools/assets/img/tools/snapheadshots.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 3</p>
+						  <a href="https://link3.com" target="_blank">Go Somewhere 3</a>
+						</div>
+					  </div>
+				  
+					  <div class="card chat">
+						<img src="https://topai.tools/assets/img/tools/adintelli.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 4</p>
+						  <a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+						</div>
+					  </div>
+
+					  <div class="card chat"  >
+						<img src="https://topai.tools/assets/img/tools/clearword.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 1</p>
+						  <a href="https://link1.com" target="_blank">Go Somewhere 1</a>
+						</div>
+					  </div>
+				  
+					  <div class="card videoediting" >
+						<img src="https://topai.tools/assets/img/tools/gpt-sdk.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 2</p>
+						  <a href="https://link2.com" target="_blank">Go Somewhere 2</a>
+						</div>
+					  </div>
+				  
+					  <div class="card" >
+						<img src="https://topai.tools/assets/img/tools/impakt-ai-coach.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 3</p>
+						  <a href="https://link3.com" target="_blank">Go Somewhere 3</a>
+						</div>
+					  </div>
+				  
+					  <div class="card chat" >
+						<img src="https://topai.tools/assets/img/tools/polymorphia.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 4</p>
+						  <a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+						</div>
+					  </div>
+					  <div class="card chat">
+						<img src="https://topai.tools/assets/img/tools/penly-ai.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 4</p>
+						  <a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+						</div>
+					  </div>
+					  <div class="card chat">
+						<img src="https://topai.tools/assets/img/tools/ubblu.webp" alt="Card Image">
+						<div class="card-content">
+						  <p>Bottom Text 4</p>
+						  <a href="https://link4.com" target="_blank">Go Somewhere 4</a>
+						</div>
+					  </div>
+				  </div>
+
 </section>
+
+
+<div class="li-container">
+	<p class="line-container"></p>
+</div>
+
+<!-- accordian -->
+
+<table style="width:100%"  data-aos-offset="100" data-aos-delay="250">
+	<th class="questions-1">
+		<h1>Questions Which You Like</h1>
+	</th>
+	<th>
+		<div class="accordion-container"  data-aos-offset="100" data-aos-delay="250">
+			<button class="accordion" >Section 1 <span style="padding-left: 20px;padding-bottom: 2px;">&#11206;</span></button >
+			<div class="panel">
+			  <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		  
+			<button class="accordion">Section 2</button>
+			<div class="panel">
+			  <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		  
+			<button class="accordion">Section 3</button>
+			<div class="panel">
+			  <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		  </div>
+	</th>
+		
+  </table>
+
+  <div class="li-container">
+	<p class="line-container"></p>
+</div>
+
+
+
+<!-- artical -->
+
+<div class="artical"  data-aos-offset="1" data-aos-delay="20" style="padding-top: 50px;">
+	<h1 class="artical-nm">Related articles</h1>
+</div>
+
+<div class="cards-container-info">
+    <div class="card-info"  data-aos-offset="10" data-aos-delay="300">
+        <img class="card-img-top-info" src="C://Users//sherp//Pictures//How-to-Learn-Data-Science-Small-1.webp" alt="Card image cap">
+        <div class="card-body-info">
+            <p class="card-text-info">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card-info" data-aos-offset="10" data-aos-delay="300">
+        <img class="card-img-top-info" src="https://intellipaat.com/blog/wp-content/uploads/2019/10/Data-Scientist-Salary_Small.jpg" alt="Card image cap">
+        <div class="card-body-info">
+            <p class="card-text-info">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+    <div class="card-info"  data-aos-offset="10" data-aos-delay="300">
+        <img class="card-img-top-info" src="https://intellipaat.com/blog/wp-content/uploads/2019/11/Different-Data-Science-Job-Profiles_Small.jpg" alt="Card image cap">
+        <div class="card-body-info">
+            <p class="card-text-info">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
 
 
 <!--- filter gallery end---->
 
 <!-- slider start--->
 
-<section class="members">
-		<div class="member-info"  data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+<section class="members" >
+		<div class="member-info"  >
 			<h1>Our <span>Informations</span></h1>
 	<p>What our member says</p>
 </div>
 
 
-<div class="member-card"  data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="300">
+<div class="member-card"  >
+	<table style="width:100%">
+		<tr class="tr-mcard">
+		  <th class="th-mcard">
+			<p>Made by tamradhwaj sherpa
+				</p>
+		  </th>
+		  <th class="th-mcard">
+			<img class="soloimg" src="C://Users//sherp//Pictures//exprt.jpeg">
 	
+		  </th>
+		  <th class="th-mcard">
+			<p style="text-align: justify;">Loremiquid! Architecto dolor, libero at quis numquam ut animi voluptatum, illo dignissimos voluptatibus, temporibus possimus est optio cum aliquam voluptatem ratione modi fuga exercitationem voluptate. Alias est commodi
+			</p>
+		  </th>
+		</tr>
+	  </table>
 
-	<img src="img/member.png">
-	<p>
- 			From Rajasthan,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.From Rajasthan,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.
-	</p>
-	<h2>* Maria Sharapova</h2>
+	<h2>* Contect Us</h2>
 
-	<img src="img/icon1.png" width="100">
-	<img src="img/icon2.png" width="100">
-	<img src="img/icon3.png" width="100">
-	<img src="img/icon4.png" width="100">
+	<img class="logos" src="C://Users//sherp//Pictures//maillogo.png" width="100">
+	<img class="logos" src="C://Users//sherp//Pictures//fblogo.jpeg" width="100">
+	<img class="logos" src="C://Users//sherp//Pictures//whtsaplogo.png" width="100">
+	<img class="logos" src="C://Users//sherp//Pictures//twtlogo.png" width="100">
 </div>
-<div class="m-images"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
-	<img src="img/s1.jpg">
-	<img src="img/s2.jpg">
-	<img src="img/s3.jpg">
-	<img src="img/s4.jpg">
-	<img src="img/s5.jpg">
-	<img src="img/s6.jpg">
+
+<h2 style="padding-top: 200px;border-bottom: 3px solid rgb(0, 176, 0);width:28%;padding-bottom: 3px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"  data-aos-offset="10" data-aos-delay="250">Here some other websites you Should visit</h2>
+<div class="m-images"   data-aos-offset="10" data-aos-delay="250">
+	<div style="text-align: center;"><img style="padding: 0 2px;" src="https://c4.wallpaperflare.com/wallpaper/238/832/888/artificial-intelligence-binary-digital-art-glowing-wallpaper-preview.jpg">UBOS</div>
+	<div style="text-align: center;"><img style="padding: 0 2px;" src="https://c0.wallpaperflare.com/preview/841/173/306/web-network-technology-developer.jpg">Check Typo</div>
+	<div style="text-align: center;"><img style="padding: 0 2px;" src="https://c4.wallpaperflare.com/wallpaper/86/369/223/artificial-intelligence-ai-black-wallpaper-preview.jpg">Cheeta Ai</div>
+	<div style="text-align: center;"><img style="padding: 0 2px;" src="https://c4.wallpaperflare.com/wallpaper/963/9/159/render-cgi-robot-3d-wallpaper-preview.jpg">Metos Ai</div>
+	<div style="text-align: center;"><img style="padding: 0 2px;" src="https://c4.wallpaperflare.com/wallpaper/789/795/651/desktopography-lion-digital-art-adam-spizak-wallpaper-preview.jpg">Bolt Ai</div>
+	<div style="text-align: center;"><img style="padding: 0 2px;" src="https://c0.wallpaperflare.com/preview/587/1024/1018/web-network-technology-developer.jpg">Cohesive Ai</div>
 	
 
 </div>
@@ -427,25 +397,30 @@ footer{
 
 
 <footer>
+	<div class="logo">
+		Q<span>U</span>L
+	</div>
+	<div class="line"></div>
 	<div class="newsletter">
-		<div data-aos="fade-up" data-aos-offset="200">
-			<h2>Subscribe our newsletter</h2>
-			<p>We’re a team of non-cynics who truly care for our work.</p>
+		<div >
+			
+			<h2>Subscribe our Channals</h2>
+			<p>Were a team of non-cynics who truly care for our work.</p>
 		</div>
-		<div class="n-text" data-aos="fade-up-right" data-aos-offset="200">
+		<div class="n-text" >
 			<label>
 				<input type="text" name="" placeholder="Enter your email">
-				<button>Subscribe</button>
+				<button class="sbotn">Subscribe</button>
 
 			</label>
 		</div>
 	</div>	
 
 
-	<div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+	<div class="f-contact" >
 		<div>
 			<h1>Information</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur elit. Nihil sit dicta.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quos optio pariatur ab. Quae sequi incidunt eaque, facere assumenda quas!</p>
 			
 			<i class="fa fa-whatsapp"></i>
 			<i class="fa fa-instagram"></i>
@@ -455,20 +430,24 @@ footer{
 
 
 		<div>
-			<h1>Useful links</h1>
+			<h1>Company</h1>
 			<p>About us</p>
-			<p>Gallery</p>
-			<p>Blog posts</p>
-			<p>Pricing plans</p>
+			<p>Ethics Guidelines</p>
+			<p>AI Research</p>
+			<p>Jobs HIRING</p>
+			<p>Security</p>
+			<p>Privacy Policy</p>
 
 		</div>
 
 		<div>
-			<h1>Details</h1>
-			<p>Photographers</p>
-			<p>Gallery</p>
-			<p>About</p>
-			<p>Pricing plans</p>
+			<h1>Use Cases</h1>
+			<p>Information Technology</p>
+			<p>Educational Videos</p>
+			<p>Learning & Development</p>
+			<p>Training Videos</p>
+			<p>Employee Training Videos</p>
+			<p>Marketing</p>
 
 		</div>
 
@@ -509,7 +488,7 @@ footer{
 		$(this).addClass('active');
 
 			var selector = $(this).attr('data-filter');
-		$('.portfolio-item').isotope({
+		$('.card-container').isotope({
 			filter:selector
 		});
 		return false;
@@ -521,5 +500,30 @@ footer{
   AOS.init();
 
 </script>
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		this.classList.toggle("active1");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+		  panel.style.maxHeight = null;
+		} else {
+		  panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	  });
+	}
+  </script>
+<script>
+	function toggleForm() {
+	  var form = document.getElementById("myForm");
+	  form.style.display = (form.style.display === "none" || form.style.display === "") ? "block" : "none";
+	}
+	</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </body>
 </html>
